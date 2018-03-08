@@ -1,5 +1,4 @@
 language: r
-language: java
 cache: packages
 
 r:
@@ -23,5 +22,6 @@ notifications:
 before_install:
     - export DISPLAY=:99.0
     - sh -e /etc/init.d/xvfb start
+language: java
 install:
   - sudo R CMD javareconf
